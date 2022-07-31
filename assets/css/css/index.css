@@ -1,0 +1,378 @@
+:root{
+    --nav-bg: rgba(63, 224, 208, 0.5);
+    --body-back: rgb(255, 255, 255);
+    --main-nav: rgba(63, 224, 208, 0.7);
+    --box: rgb(126,249,255);
+    --mobile-nav:rgb(112, 94, 225);
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.custom-alert{
+    padding: 5px 10px 5px 10px;
+    font-size: 22px;
+    text-align: center;
+}
+a:hover{
+    color: black;
+}
+body{
+    background-color: var(--body-back);
+}
+.container-fluid{
+    width: 100%;;
+}
+.main-nav{
+    width: 100%;
+    /* height: auto; */
+    /* background-color: var(--main-nav) */
+}
+.logo{
+    height: 30px;
+    width: 500px;
+    padding-left: 20px;
+    margin: 10px;
+}
+.navbar_font{
+    font-weight: 600;
+}
+.nav-list{
+    display:flex-end;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 40px;
+}
+.nav-list li{
+    float: right;
+    display: inline;
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.nav-dropdown{
+    margin-top: 0px;
+    border-radius: 10px; 
+    background-color: var(--nav-bg);
+    width: 20px;
+}
+.nav-dropdown-active{
+    display: grid;
+}
+.nav-dropdown a:hover{
+    background-color: var(--nav-bg);
+    border-radius: 10px;
+}
+.nav-dropdown li{
+    float: left;
+    display: block;
+}
+.dropdown-items{
+    display: block;
+}
+#menubar{
+    font-size: 30px;
+    display: none;
+}
+#menubarI{
+    float: right; 
+    font-size: 22px;
+    margin: 10px;
+}
+.mobile_nav{
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    display: none;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--mobile-nav);
+    position: absolute;
+    z-index: 2;
+}
+.mobile_nav ul{
+    padding: 0;
+    font-size: 1rem;
+}
+.mobile_nav ul li{
+    padding: 5px 5px 5px 20px;
+    border-radius: 0 5px 5px 0;
+    margin-left: -5%;
+    width: 100%;
+    margin-right: 20px;
+}
+.mobile_nav ul a{
+    text-decoration: none;
+    color: black;
+}
+.mobile_nav ul li a:active{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.mobile_nav ul li:hover{
+    background-color: aqua;
+    width: 100%;
+}
+.mobile-nav-sub1, .mobile-nav-sub2{
+    display: none;
+}
+
+
+.mobile_navigation{
+    height: 40px; 
+    width: 100%; 
+    display: none;
+    background-color: var(--main-nav);
+}
+.mobile_logo{
+    height: 30px;
+    width: 400px;
+    margin-top: 5px;
+}
+.mobile_nav_name{
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.usertype{
+    font-size: 10px;
+    margin-top: 15px;
+    float: right;
+    margin-right: 20px;
+}
+
+/* ********************************* Account Page Starts ********************************************* */
+
+.account_image{
+    border-radius: 50%;
+    /* margin: 0 45% 0 45%; */
+    height: 100px;
+    width: 100px;
+}
+.account_table{
+    padding: 20px;
+    border-radius: 10px;
+}
+.bi-pencil-square{
+    cursor: pointer;
+}
+.account_table tr td{
+    padding: 10px;
+}
+.change_icon{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: blue;
+}
+
+/* ********************************* Account Page Ends ********************************************* */
+
+/*********************************** Index page Starts**************************************************** */
+
+.index_image{
+    height: 400px;
+    width: 90%;
+    margin: 40px 5% 20px 5%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 1px var(--box);
+}
+.box{
+    height: 160px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--box);
+    cursor: pointer;
+}
+.box:hover{
+    background-color: white;
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+.box img{
+    height: 100;
+    width: 35%;
+    margin: 10px 32% 0 32%;
+}
+.box h5{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+#mobile_index{
+    display: none;
+}
+.mobile_slide{
+    width: 100%;
+}
+.mobile_index_image{
+    height: 40vh;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 1px rgb(103, 250, 176);
+}
+
+
+
+.footer{
+    background-color: var(--main-nav);
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 1px -5px 40px 2px;
+}
+.footer_head{
+    margin-top: 20px;
+    font-style: 800;
+}
+.footer_text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.footer_below{
+    background-color: rgb(40, 40, 40);
+    padding: 20px;
+    color: white;
+}
+
+
+
+
+@media (max-width: 992px){
+    #menubar{
+        display:block;
+    }
+    .mobile_navigation{
+        display: block;
+    }
+    .menubar{
+        display:block;
+    }
+    .lap_nav{
+        display: none;
+    }
+    #mobile_index{
+        display: block;
+    }
+    #desktop_index{
+        display: none;
+    }
+}
+
+/* Schemes */
+.scheme_head{
+    padding: 10px 10px 10px 30px;
+    font-size: 30px;
+}
+.scheme_row_1 li{
+    background-color: rgb(221, 211, 154);
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgba(63, 224, 208, 0.5);
+    cursor: pointer;
+}
+.scheme_row_2 h3{
+    margin: 10px;
+    font-size: 1.1rem;
+}
+.scheme_row_2 p{
+    margin: 10px;
+    padding: 0 10px 5px 15px;
+}
+.scheme_row_2 button{
+    margin-top: 30px;
+    margin-left: 50%;
+}
+
+/* *********************************************************Scheme Submission************************************************* */
+.scheme_table_td{
+    padding: 10px;
+}
+
+
+/* *******************************************************************View User**************************************************** */
+
+.view_user_table tr{
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px dotted rgb(250, 186, 186);
+}
+
+.view_user_table th{
+    padding: 10px;
+    background-color:rgb(185, 240, 194);
+    border-radius: 10px 0 0 10px;
+}
+.view_user_table td{
+    padding: 10px;
+    background-color: rgb(63, 255, 165);
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* ******************************************COMPANY JOBS********************************************* */
+input[type="email"], input[type="password"], input[type="text"], input[type="number"], input[type="date"], .service_desc, .mul-select, .job_type{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+input[type="date"]{
+    width: 200px;
+    margin-top: 10px;
+}
+input[type="email"]:hover, input[type="password"]:hover, input[type="text"]:hover, input[type="number"]:hover, input[type="date"]:hover, .service_desc:hover, .mul-select:hover, .job_type:hover{
+    box-shadow: 1px 2px 10px 3px rgb(160, 248, 179);
+
+}
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, .service_desc:focus, .mul-select:focus, .job_type:focus{
+    border: none;
+    box-shadow: 1px 2px 10px 3px rgb(160, 248, 179);
+    outline: none;
+}
+
+/* ***************************************************************JOB PAGE************************************************* */
+.job_first_page th{
+    background-color: beige;
+    padding: 10px;
+}
+.job_first_page_td{
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+
+
+/* front */
+.index-top-image-div{
+    height: 90vh;
+    width: 100%;
+    background: url("./assets/images/index.jpg");
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+
+.index-1-image{
+    /* background-attachment: fixed;
+    width: 100%;
+    height: 90vh; */
+
+}

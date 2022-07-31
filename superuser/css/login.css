@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(238, 235, 235);
+}
+.login-main-col{
+    margin-top: 100px;
+}
+.card-text{
+    padding: 8px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login-inputs{
+    width: 96%;
+    padding: 8px;
+    margin: 2%;
+}
+.login-inputs:focus{
+    outline: none;
+}
